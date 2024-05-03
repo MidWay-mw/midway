@@ -141,7 +141,7 @@ header h1 {
 }
 button {
     line-height: normal;
-    margin-top: 40px;
+    margin-top: 10px;
     min-width: 600px;
     height: 150px;
     cursor: pointer;
