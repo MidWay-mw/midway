@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <link rel="shortcut icon" href="https://midway.ovh/midway.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:url" content="https://midway.ovh/">
+  <meta property="og:title" content="MidWay - 404">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Midway">
+  <meta property="article:author" content="https://midway.ovh">
+  <meta name="theme-color" content="#7d63ff">
+  <meta property="og:description" content="Gdzie podróżujesz wędrowniku? Zgubiłeś się, podstrona do której podałeś drogę nie istnieje.">
+  <meta property="og:image" content="https://midway.ovh/midway.png">
+  <link rel="stylesheet" href="/404.css">
+  <title>Midway - Strona Główna</title>
+  <script src="https://unpkg.com/smooth-scroll"></script>
+
+      <style>
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .digit {
+            font-size: 17rem;
+            font-weight: bold;
+            margin: 0 10px;
+            transform-origin: 50% 50%;
+            opacity: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    
+    
+    
+  </head>
+  <body>
+    <div id="scrollBar"><div id="scrollIndicator"></div></div>
+  
+  <div id="up">
+  
+  <div id="Logo">
+    <a href="/"><img src="midway.png" width="50px"><h1>Midway</a></h1>
+  </div>
+  <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+      </label>
+      <ul class="menu__box">
+      <li><a class="menu__item" href="/">Strona główna <</a></li>
+      <li><a class="menu__item" href="/faq.html">Faq</a></li>
+      <li><a class="menu__item" href="/dev.html">Developer's</a></li>
+    </ul>
+  </div></div>
+    
+    <header>
+    <center>
+      <br>
+      <br>
+      <br>
+      <h1>Ups! - Błąd 404<br>Nie możemy znaleźć podstrony.</h1></center><br>
+      
+      
+      <center>
+      <div id="container">
+        <div class="digit" id="digit4">4</div>
+        <div class="digit" id="digit0">0</div>
+        <div class="digit" id="digit4b">4</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script>
+        function flicker(element) {
+            const flickerCount = getRandomInt(1, 4);
+            const duration = getRandomFloat(0.1, 0.5);
+            
+            gsap.timeline()
+                .to(element, { opacity: 0, duration: 0.1, repeat: flickerCount, yoyo: true })
+                .to(element, { opacity: 1, duration: duration });
+        }
+
+        gsap.timeline({ repeat: -1, delay: 2 })
+            .add(() => flicker("#digit4"))
+            .add(() => flicker("#digit0"))
+            .add(() => flicker("#digit4b"))
+            .to(".digit", { opacity: 1, scale: 1, y: 0, delay: 4, duration: 1 });
+
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        function getRandomFloat(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+    </script><br>
+      
+      
+      <a href="https://midway.ovh/"><button>
+        <h2><b>Zabierz mnie spowrotem.</b></h2>
+        </button></a></center>
+    </header>
+  <script src="script.js"></script>
+  <script src="https://m1dway.statuspage.io/embed/script.js"></script>
+</body>
+</html>
