@@ -1,8 +1,18 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #141414;
-    color: #ffffff;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #ffffff;
+  width: 100%;
+  overflow-x: hidden;
+}
+a{
+  margin:0px;
+  display: flex;
+  align-items: center;
+  display: inline-flex;
+  text-decoration: none;
+  color: #ffffff;
 }
 /*Logo (lewy górny) --------------------------------------*/
 #Logo {
@@ -20,7 +30,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  padding-left:3.5px
+  padding-left:3.5px;
+  height: 57px;
 }
 #Logo h1{
   margin: 10px;
@@ -120,24 +131,26 @@ body {
 }
 /* wygląd i animacja 404 -------------------*/
 h1 {
-    color: #ffff;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
 }
 header h1 {
   margin-top: 140px;
 }
 button {
     line-height: normal;
-    margin: 20px;
-    min-width: 500px;
-    height: 110px;
+    margin-top: 40px;
+    min-width: 600px;
+    height: 150px;
     cursor: pointer;
     background-color: #252526;
     border: 5px solid #7d63ff;
     border-radius: 20px;
     transition-duration: 0.5s;
-    color: #ffff;
+    color: #ffffff;
+    font-size: 20px;
   }
 button:hover {
   scale: 0.97;
@@ -151,14 +164,31 @@ body::-webkit-scrollbar-thumb{
   border-radius: 10px;
   background-color: #212121;
 }
-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
+#center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 600px) {
  scale: 0.6;
+}
+/*responsywność ------------------------*/
+@media screen and (max-width: 600px) {
+  #container{
+    scale: 70%;
+  }
+  button{
+    scale: 85%;
+  }
+  #center a{
+    scale: 70%;
+  }
+  center h1{
+    font-size:17px;
+  }
 }
