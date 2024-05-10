@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -174,13 +174,18 @@ body::-webkit-scrollbar-thumb{
   flex-wrap: wrap;
   width: 100%;
   overflow-x: hidden;
+}
+#container{
   font-family: "Jaro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
+/*responsywność ------------------------*/
 @media screen and (min-width: 600px) {
  scale: 0.6;
 }
-/*responsywność ------------------------*/
+
 @media screen and (max-width: 600px) {
   #container{
     scale: 70%;
