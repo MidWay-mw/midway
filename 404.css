@@ -181,6 +181,18 @@ body::-webkit-scrollbar-thumb{
   font-weight: 400;
   font-style: normal;
 }
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digit {
+  font-size: 17rem;
+  margin: 0 10px;
+  transform-origin: 50% 50%;
+  opacity: 0;
+}
 /*responsywność ------------------------*/
 @media screen and (min-width: 600px) {
  scale: 0.6;
