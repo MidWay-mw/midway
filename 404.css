@@ -7,6 +7,7 @@ body {
   color: #ffffff;
   width: 100%;
   overflow-x: hidden;
+  font-family: "Roobert", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 a{
   margin:0px;
@@ -282,6 +283,8 @@ footer button:hover p{
   padding:20px;
   background-color: #101010;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .margin h4{
   color: #656565;
