@@ -224,7 +224,6 @@ body::-webkit-scrollbar-thumb{
 footer{
   background-color: #0e0e0e;
   width: 100%;
-  padding: 30px;
   display: flex;
   flex-direction: column;
   border-top: 1px solid #303030;
