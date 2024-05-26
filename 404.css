@@ -17,6 +17,12 @@ a{
   text-decoration: none;
   color: #ffffff;
 }
+:focus {
+     outline: none;
+}
+* {
+    user-select: none;
+}
 /*Logo (lewy górny) --------------------------------------*/
 #Logo {
   top: 10px;
